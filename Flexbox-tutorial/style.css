@@ -7,42 +7,20 @@ body {
     background: #eee;
 }
 
-.wrapper {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-}
-/* menu base styles */
-nav {
-    background : #333;
+#blocks {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
 }
 
-nav ul {
-    list-style-type:none;
-    padding: 0;
-}
-
-nav a {
-    text-decoration: none;
+#blocks div {
+    flex: 0 0 100px;
+    padding: 40px 0;
     text-align: center;
-    color: #fff;
-    display: block;
-    padding: 10px;
+    background: #ccc;
 }
 
-nav a:hover {
-    background-color: #555;
-}
-
-/* flex styles */
-
-
-
-nav ul {
-    display:flex;
-    justify-content: flex-end;
-}
-
-nav li {
-  //  flex: 1 1 0;
-}
+.one{order:2;}
+.two{order:0;}
+.three{order:3;}
+.four{order:0;}
